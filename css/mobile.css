@@ -1,0 +1,166 @@
+@media screen and (min-width: 480px) {
+    .container {
+        max-width: 428px;
+    }
+
+
+    
+}
+
+@media screen and (max-width: 767px) {
+    .team>.container {
+            max-width: 264px;
+        }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+    .header {
+        
+    }
+    .site-adress {
+        display: block;
+        padding-bottom: 12px;
+        padding-top: 24px;
+        margin-right: auto;
+        
+        
+    }
+    .menu-btn {
+        display: none;
+    }
+    .adress-link {
+        padding: 0;
+        font-size: 12px;
+        line-height: 1.2;
+        letter-spacing: 0.04em;
+    }
+    .email {
+        margin-bottom: 6px;
+        
+    }
+    .hero-title {
+        margin-bottom: 40px;
+        width: 496px;
+    }
+    .hero-btn {
+        margin-bottom: 108px;
+    }
+    .our-advantages {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+
+    }
+    .point-text {
+        width: calc((100% - 24px) / 2);
+        margin-bottom: 72px;
+    }
+    .advantages-title {
+        text-align: start;
+    }
+    .advantages-text {
+        text-align: start;
+    }
+    .team {
+        padding-bottom: 104px;
+    }
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        margin-bottom: -64px;
+    }
+    .team-card {
+        width: calc((100% - 24px) / 2);
+        margin-bottom: 64px;
+    }
+         .team>.container {
+             max-width: 552px;
+         }
+    .card-description {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .customers-list {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .container-footer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .logo-text-container {
+        width: calc((100% - 24px) / 2);
+    }
+    .footer-logo {
+        text-align: start;
+        margin-left: auto;
+    }
+    .footer-text {
+        width: 264px;
+        text-align: start;
+    }
+    .social-media-footer-container {
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .social-media-footer-text {
+        padding-top: 0;
+    }
+    .footer-text-form {
+        text-align: start;
+    }
+    .footer-form-main-container {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-form {
+        display: flex;
+        
+    }
+    .form-input {
+        margin-right: 24px;
+        margin-bottom: 0;
+        width: 264px;
+    }
+    .footer-form-main-container {
+        
+    }
+    .footer-form-button {
+        
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .site-nav {
+        display: none;
+    }
+    .adress {
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 1199px) {
+    .thumb {
+        display: none;
+    }
+    .examples {
+        display: none;
+    }
+}
