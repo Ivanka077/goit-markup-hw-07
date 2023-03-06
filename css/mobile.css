@@ -2,24 +2,55 @@
     .container {
         max-width: 428px;
     }
+    .modal {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+        /* max-width: 408px; */
+        width: 100%;
+    }
+    
 
-
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .menu-container {
+        width: 428px;
+    }
     
 }
+/* @media screen and (min-width: 480px) {
+    .modal {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+        /* max-width: 408px; */
+        width: 100%;
+    }
+    
+} */
 
 @media screen and (max-width: 767px) {
     .team>.container {
             max-width: 264px;
         }
+    /* .menu-container {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 796px; 
+    } */
+    
 }
 
 @media screen and (min-width: 768px) {
     .container {
         max-width: 768px;
     }
-    .header {
-        
-    }
+    
     .site-adress {
         display: block;
         padding-bottom: 12px;
@@ -41,6 +72,9 @@
         margin-bottom: 6px;
         
     }
+    .menu-btn {
+        display: none;
+    }
     .hero-title {
         margin-bottom: 40px;
         width: 496px;
@@ -51,7 +85,6 @@
     .our-advantages {
         display: flex;
         flex-wrap: wrap;
-        gap: 24px;
 
     }
     .point-text {
@@ -63,6 +96,7 @@
     }
     .advantages-text {
         text-align: start;
+        font-weight: 500;
     }
     .team {
         padding-bottom: 104px;
@@ -77,9 +111,7 @@
         width: calc((100% - 24px) / 2);
         margin-bottom: 64px;
     }
-         .team>.container {
-             max-width: 552px;
-         }
+    
     .card-description {
         padding-left: 16px;
         padding-right: 16px;
@@ -94,10 +126,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: 24px;
-        text-align: center;
         align-items: center;
-        justify-content: center;
-        
     }
     .logo-text-container {
         width: calc((100% - 24px) / 2);
@@ -105,31 +134,38 @@
     .footer-logo {
         text-align: start;
         margin-left: auto;
+        display: flex;
     }
     .footer-text {
         width: 264px;
         text-align: start;
+        margin: 0;
     }
     .social-media-footer-container {
-        align-items: center;
-        justify-content: center;
-        
+        text-align: center;
+        align-items: flex-start;
     }
-
+    .social-media-footer-container {
+        margin: 0;
+    }
     .social-media-footer-text {
         padding-top: 0;
+        display: flex;
+        justify-content: flex-start;
     }
     .footer-text-form {
+        display: flex;
+        justify-content: flex-start;
         text-align: start;
     }
     .footer-form-main-container {
         text-align: center;
-        align-items: center;
-        justify-content: center;
+        align-items: flex-start;
     }
 
     .footer-form {
         display: flex;
+        text-align: start;
         
     }
     .form-input {
@@ -138,10 +174,23 @@
         width: 264px;
     }
     .footer-form-main-container {
-        
+        text-align: start;
+        justify-content: flex-start;
     }
-    .footer-form-button {
-        
+    
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .our-advantages {
+        gap: 24px;
+    }
+    
+    .team>.container {
+    max-width: 552px;
+    }
+    .container-footer {
+        gap: 24px;
+        text-align: center;
+        justify-content: center;
     }
 }
 
@@ -152,6 +201,7 @@
     .adress {
         display: none;
     }
+
 }
 
 
@@ -162,5 +212,90 @@
     }
     .examples {
         display: none;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1158px;
+    }
+    .site-adress {
+        display: flex;
+        padding-top: 24px;
+        padding-bottom: 28px;
+    }
+    .adress-link {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    }
+    .overlay {
+        /* max-width: 1440px; */
+    }
+    .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    }
+    .hero-title {
+    margin-bottom: 48px;
+    }
+    .advantages {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    }
+    .our-advantages {
+        flex-wrap: nowrap;
+    }
+    .advantages-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    }
+    .advantages-text {
+    width: 264px;
+    font-weight: 400;
+    }
+    .point-text:not(:last-child) {
+    margin-right: 24px;
+    }
+    .point-text {
+    width: calc((100% - 72px) / 4);
+    }
+    .team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    }
+    .cards {
+        flex-wrap: nowrap;
+    }
+    .team-card {
+    width: calc((100% - 72px) / 4);
+    }
+    .customers {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .customers-list {
+        display: flex;
+        gap: 24px;
+    }
+    .customers-item {
+        width: calc((100% - 135px) / 6);
+    }
+    .footer {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .container-footer {
+        flex-wrap: nowrap;
+        width: 1158px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    .social-media-footer-container {
+        margin-right: 80px;
+    }
+    .footer-form-main-container {
+        
     }
 }
