@@ -23,10 +23,13 @@
   </head>
   <body>
     <header class="header">
-      <div class="menu-container is-hidden" id="menu-container" data-menu>
+      <div
+        class="menu-container is-hidden js-menu-container"
+        id="menu-container"
+      >
         <div class="menu-wrapper">
           <div>
-            <button class="menu-mob-btn" data-menu-close>
+            <button class="menu-mob-btn js-close-menu">
               <svg class="menu-icon" width="8" height="8">
                 <use href="./images/icons.svg#icon-close-menu-1"></use>
               </svg>
@@ -118,11 +121,10 @@
         </address>
         <button
           type="button"
-          class="menu-btn"
+          class="menu-btn js-open-menu"
           is-open
           aria-expanded="false"
           aria-controls="menu-container"
-          data-menu-open
         >
           <svg width="32" height="32" aria-label="mobile menu switch">
             <use
@@ -284,6 +286,10 @@
           <ul class="example-images list">
             <li class="technology">
               <img
+                srcset="
+                  ./images/Rectangle-@1x.jpg 1x,
+                  ./images/Rectangle-@2x.jpg 2x
+                "
                 src="./images/Rectangle-71.jpg"
                 alt="Computer"
                 width="360"
@@ -292,6 +298,10 @@
             </li>
             <li class="technology">
               <img
+                srcset="
+                  ./images/Rectangle-72-@1x.jpg 1x,
+                  ./images/Rectangle-71-@2x.jpg 2x
+                "
                 src="./images/Rectangle-72.jpg"
                 alt="Mobile application"
                 width="360"
@@ -300,6 +310,10 @@
             </li>
             <li class="technology">
               <img
+                srcset="
+                  ./images/Rectangle-74-@1x.jpg 1x,
+                  ./images/Rectangle-73-@2x.jpg
+                "
                 src="./images/Rectangle-73.jpg"
                 alt="Phone in hand"
                 width="360"
@@ -315,6 +329,7 @@
           <ul class="cards list">
             <li class="team-card">
               <img
+                srcset="./images/img-1-@1x.jpg 1x, ./images/img-1-@2x.jpg 2x"
                 src="./images/img-1.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -357,6 +372,7 @@
             </li>
             <li class="team-card">
               <img
+                srcset="./images/img-2-@1x.jpg 1x, ./images/img-2-@2x.jpg 2x"
                 src="./images/img-2.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -399,6 +415,7 @@
             </li>
             <li class="team-card">
               <img
+                srcset="./images/img-3-@1x.jpg 1x, ./images/img-3-@2x.jpg 2x"
                 src="./images/img-3.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -441,6 +458,7 @@
             </li>
             <li class="team-card">
               <img
+                srcset="./images/img-4-@1x.jpg 1x, ./images/img-4-@2x.jpg 2x"
                 src="./images/img-4.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -597,6 +615,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
-    <script href="./js/mobile-menu.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
