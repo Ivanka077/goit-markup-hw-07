@@ -416,7 +416,6 @@ img {
 }
 
 .social-media-footer-container {
-
  text-align: center;
 }
 
@@ -603,15 +602,16 @@ img {
 
 }
 
+
 .icon-hamburger {
     stroke: #000000;
+    
 }
 
 
-
-/* /* .menu-btn .icon-close-menu {
+.menu-btn .icon-close-menu {
     display: none;
-} */
+} 
 
 .menu-btn.is-open .icon-close-menu {
     display: block;
@@ -623,14 +623,18 @@ img {
 
 .menu-container {
     z-index: 999;
+    
     position: fixed;
     width: 100%;
     height: 100%;
     top: 0;
+    /* left: 0; */
     overflow-y: scroll;
     
+    transform: translateX(100%);
     background-color: #FFFFFF;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+    transition: transform 250ms ease-in-out;
 }
 .menu-container > .menu-wrapper {
     display: flex;
@@ -639,8 +643,8 @@ img {
     height: 100%;
     overflow-y: auto;
 }
-.menu-container .is-open {
-    display: block;
+.menu-container.is-open {
+    transform: translateX(0);
 }
 
 .menu-point {
@@ -655,9 +659,12 @@ img {
     color: #2E2F42;
     text-decoration: none;
     margin-bottom: 40px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-link.current {
+.menu-link.current,
+.menu-link:hover,
+.menu-link:focus {
     color: #404BBF;
 }
 
@@ -665,13 +672,26 @@ img {
     position: absolute;
     top: 24px;
     right: 24px;
+    /* display: block;
+    margin-left: auto;
+    padding-top: 24px;
+    padding-right: 24px; */
     width: 24px;
     height: 24px;
     background: #E7E9FC;
+    opacity: 1;
    
     border: 1px solid #2E2F42;
     border-radius: 50%;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
+}
+
+.menu-mob-btn:focus,
+.menu-mob-btn:hover .icon-close-menu {
+    opacity: 0.5;
+    cursor: pointer;
+
 }
 
 .menu-nav {
@@ -704,6 +724,13 @@ img {
     letter-spacing: 0.02em;
     color: #434455;
     text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-adress-link:hover,
+.menu-adress-link:focus {
+    color: #404BBF;
+    cursor: pointer;
 }
 
 .menu-point-adress {
@@ -726,7 +753,14 @@ img {
     height: 40px;
     background: #4D5AE5;
     border-radius: 50%;
-    opacity: 0.1;
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-social-items:hover,
+.menu-social-items:focus {
+    opacity: 0.5;
+    cursor: pointer;
 }
 
 .overlay {
@@ -743,6 +777,15 @@ img {
 
 }
 
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .overlay {
+        background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url('../images/office-mob-@2x.jpg');
+    }
+}
+
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -756,6 +799,7 @@ img {
     padding-top: 112px;
     /* background: var(--primary-text-color); */
 }
+
 
 .hero-title {
     /* width: 320px; */
