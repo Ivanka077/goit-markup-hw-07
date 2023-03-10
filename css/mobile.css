@@ -1,28 +1,39 @@
+@media screen and (min-width: 428px) {
+    .menu-adress-link-tel {
+        font-size: 36px;
+    }
+    .menu-social-media {
+        gap: 56px;
+    }
+}
+
 @media screen and (min-width: 480px) {
-    .container {
-        max-width: 428px;
-        padding-left: 16px;
-        padding-right: 16px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .modal {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 72px 24px 24px;
-        max-width: 408px;
-        width: 100%;
-    }
     .form-modal-input {
-        width: 100%;
+        
     }
     .form {
         width: 360px;
     }
-
+         @media (min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi),
+         (min-resolution: 2dppx) {
+             .overlay {
+                 background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                     url('../images/office-mob-@2x.jpg');
+             }
+         }
+    
+         @media (min-device-pixel-ratio: 1),
+         (min-resolution: 192dpi),
+         (min-resolution: 2dppx) {
+             .overlay {
+                 background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                     url('../images/office-mob-@1x.jpg');
+             }
+         }
 }
+
+
 @media screen and  (min-width: 768px) {
     .menu-container {
         display: none;
@@ -34,13 +45,14 @@
 
 @media screen and (max-width: 767px) {
     .team>.container {
-            max-width: 264px;
+            max-width: 294px;
         } 
+    
 }
 
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 768px;
+        max-width: 584px;
     }
     
     .site-adress {
@@ -50,6 +62,10 @@
         margin-right: auto;
         
         
+    }
+    .site-nav {
+        margin-left: 120px;
+        margin-right: 120px;
     }
     .menu-btn {
         display: none;
@@ -67,12 +83,17 @@
     .menu-btn {
         display: none;
     }
+    .hero {
+
+    }
     .hero-title {
         margin-bottom: 40px;
         width: 496px;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1.07;
     }
     .hero-btn {
-        margin-bottom: 108px;
     }
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -82,6 +103,14 @@
                     url('../images/office-tab-@2x.jpg');
             }
         }
+                @media (min-device-pixel-ratio: 1),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    .overlay {
+                        background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                            url('../images/office-tab-@1x.jpg');
+                    }
+                }
     .our-advantages {
         display: flex;
         flex-wrap: wrap;
@@ -89,7 +118,7 @@
     }
     .point-text {
         width: calc((100% - 24px) / 2);
-        margin-bottom: 72px;
+        
     }
     .advantages-title {
         text-align: start;
@@ -105,13 +134,15 @@
         display: flex;
         flex-wrap: wrap;
         gap: 24px;
-        margin-bottom: -64px;
+        
     }
     .team-card {
         width: calc((100% - 24px) / 2);
-        margin-bottom: 64px;
+        
     }
-    
+    .team-card:not(:last-child) {
+            margin-bottom: 0;
+    }
     .card-description {
         padding-left: 16px;
         padding-right: 16px;
@@ -122,11 +153,11 @@
         justify-content: center;
         
     }
+    
     .container-footer {
         display: flex;
         flex-wrap: wrap;
         gap: 24px;
-        align-items: center;
     }
     .logo-text-container {
         width: calc((100% - 24px) / 2);
@@ -139,17 +170,19 @@
     .footer-text {
         width: 264px;
         text-align: start;
-        margin: 0;
+        
     }
     .social-media-footer-container {
         text-align: center;
         align-items: flex-start;
+        
+        
     }
     .social-media-footer {
-        margin-bottom: 104px;
-    }
-    .social-media-footer-container {
         margin: 0;
+        align-items: start;
+        text-align: start;
+        justify-content: flex-start;
     }
     .social-media-footer-text {
         padding-top: 0;
@@ -186,15 +219,22 @@
     .our-advantages {
         gap: 24px;
     }
-    
+    .container-nav-adress {
+            max-width: 768px;
+    }
+    .social-media-footer-container {
+        margin-bottom: 104px;
+    }
     .team>.container {
-    max-width: 552px;
+    max-width: 584px;
     }
     .container-footer {
-        gap: 24px;
+        gap: 72px 24px;
         text-align: center;
-        justify-content: center;
     }
+        .customers>.container {
+            
+        }
 }
 
 @media screen and (max-width: 767px) {
@@ -227,6 +267,9 @@
         display: flex;
         padding-top: 24px;
     }
+    .site-nav {
+        justify-content: center;
+    }
     .adress-link {
         font-size: 16px;
         line-height: 1.5;
@@ -250,7 +293,28 @@
     }
     .hero-title {
     margin-bottom: 48px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
     }
+         @media (min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi),
+         (min-resolution: 2dppx) {
+             .overlay {
+                 background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                     url('../images/office-desk-@2x.jpg');
+             }
+         }
+    
+         @media (min-device-pixel-ratio: 1),
+         (min-resolution: 192dpi),
+         (min-resolution: 2dppx) {
+             .overlay {
+                 background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                     url('../images/office-desk-@1x.jpg');
+             }
+         }
     .advantages {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -269,6 +333,7 @@
     }
     .point-text:not(:last-child) {
     margin-right: 24px;
+    margin-bottom: 0;
     }
     .point-text {
     width: calc((100% - 72px) / 4);
@@ -283,6 +348,7 @@
     .team-card {
     width: calc((100% - 72px) / 4);
     }
+
     .customers {
         padding-top: 120px;
         padding-bottom: 120px;
@@ -305,17 +371,22 @@
         margin-right: auto;
         
     }
+    .footer-text {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
     .logo-text-container {
-        margin-bottom: 100px;
+        margin-bottom: 0;
     }
     .social-media-footer-container {
         margin-right: 80px;
+        margin-bottom: 0;
     }
     .social-media-footer {
-        margin-bottom: 132px;
+        
     }
     .footer-form-main-container {
         text-align: start;
-        margin-bottom: 132px;
+        margin-bottom: 0;
     }
 }
