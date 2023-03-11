@@ -232,9 +232,7 @@
     .advantages>.container {
             max-width: 768px;
     }
-    .social-media-footer-container {
-        margin: 0;
-    }
+    
     .cards {
         gap: 64px 24px;
     }
@@ -309,6 +307,9 @@
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
+    }
+    .email {
+        margin-right: 40px;
     }
     .nav-link {
         padding-top: 24px;
