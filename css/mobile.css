@@ -10,25 +10,22 @@
     }
 }
 
-@media screen and  (max-width: 428px){
+@media screen and (max-width: 428px) {
+    .overlay {
+            background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url('../images/office-mob-@1x.jpg');
+        }
+    
+
+    
     @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
             .overlay {
                 background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-                    url('../images/office-mob-@2x.jpg');
+                        url('../images/office-mob-@2x.jpg');
             }
-        }
-    
-        @media (min-device-pixel-ratio: 1),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            .overlay {
-                background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-                    url('../images/office-mob-@1x.jpg');
-            }
-        }
-    
+    }
 }
 
 @media screen and (min-width: 480px) {
@@ -40,24 +37,22 @@
     }
         
 }
-@media screen and (min-width: 429px) and (max-width: 768px) {
-    @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            .overlay {
-                background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-                    url('../images/office-tab-@2x.jpg');
-            }
+@media screen and  (max-width: 768px) {
+    .overlay {
+            background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url('../images/office-tab-@1x.jpg');
         }
     
-        @media (min-device-pixel-ratio: 1),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            .overlay {
-                background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-                    url('../images/office-tab-@1x.jpg');
-            }
-        }
+
+    
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+                .overlay {
+                    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                        url('../images/office-tab-@2x.jpg');
+                }
+    }
 }
 
 @media screen and  (min-width: 768px) {
@@ -272,22 +267,20 @@
 }
 
 @media screen and (min-width: 769px) {
-    @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            .overlay {
-                background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-                    url('../images/office-desk-@2x.jpg');
-            }
+    .overlay {
+            background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url('../images/office-desk-@1x.jpg');
         }
     
-        @media (min-device-pixel-ratio: 1),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            .overlay {
-                background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-                    url('../images/office-desk-@1x.jpg');
-            }
+
+    
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+                .overlay {
+                    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                        url('../images/office-desk-@2x.jpg');
+                }
         }
 }
 
